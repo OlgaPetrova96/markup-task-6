@@ -1,0 +1,319 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page
+{
+    display: grid;
+    width: 100%;
+    grid-template-areas: 'left news news news right'
+        'left center center center right'
+        'left vidgets vidgets vidgets right';
+}
+
+.left
+{
+    grid-area: left;
+}
+
+.right
+{
+    grid-area: right;
+    display: flex;
+}
+
+.news
+{
+    grid-area: news;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.center
+{
+    grid-area: center;
+    margin-bottom: 10px;
+}
+
+.main
+{
+    min-width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vidgets
+{
+    grid-area: vidgets;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-left: 20%;
+}
+
+ul
+{
+    font-size: 14px;
+
+}
+
+.now li
+{
+    margin-bottom: 10px;
+}
+
+.menu ul
+{
+    display: flex;
+    list-style: none;
+    margin-top: 20px;
+    width: 70%;
+    margin-left: 16%;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.menu a
+{
+    margin: 10px;
+    margin-bottom: 0;
+    color: #00f;
+}
+
+a
+{
+    text-decoration: none;
+    color: #000;
+}
+
+p
+{
+    text-indent: 1.5em;
+}
+
+.exchange
+{
+    font-size: 13px;
+}
+
+.rates
+{
+    font-weight: bold;
+}
+
+.taxi
+{
+    color: #00f;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.now
+{
+    width: 650px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.smi
+{
+    font-size: 20px;
+    color: #0000cd;
+}
+
+.city
+{
+    color: #6698ff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a:hover
+{
+    color: #b22222;
+}
+
+.date
+{
+    color: #808080;
+    font-size: 13px;
+}
+
+.description
+{
+    font-size: 14px;
+}
+
+form
+{
+    background: #ffd700;
+    width: 100%;
+}
+
+.rectangle
+{
+    border: 18px solid transparent;
+    border-left: 18px solid #ffd700;
+}
+
+button
+{
+    border: none;
+    background: #ffd700;
+}
+
+input
+{
+    margin: 2px;
+    height: 26px;
+    width: 90%;
+}
+
+.search
+{
+    width: 70%;
+}
+
+.yandex
+{
+    font-family: Roboto, sans-serif;
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+.yandex:first-letter
+{
+    color: #f00;
+}
+
+.location
+{
+    display: flex;
+    align-items: center;
+}
+
+.location:hover .arrow
+{
+    background: url(https://goo.gl/BY7BfB);
+}
+
+.location:hover .my-city
+{
+    color: #b22222;
+}
+
+.my-city
+{
+    color: #808080;
+    font-size: 13px;
+}
+
+.arrow
+{
+    background: url(https://goo.gl/SZJYzT);
+    width: 20px;
+    height: 20px;
+}
+
+.find-all
+{
+    width: 60%;
+    margin-left: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.mail ul
+{
+    list-style: none;
+    font-size: 13px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-top: 0;
+}
+
+.mail li
+{
+    margin-bottom: 7px;
+}
+
+.example
+{
+    color: #808080;
+    font-size: 13px;
+}
+
+.advertising
+{
+    text-align: right;
+}
+
+.subject-name
+{
+    font-size: 19px;
+    color: #4040ff;
+}
+
+.mail
+{
+    width: 130px;
+    height: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    flex: 2;
+    display: flex;
+}
+
+.name
+{
+    font-weight: bold;
+}
+
+.first-letter
+{
+    color: #f00;
+}
+
+.subject
+{
+    margin-bottom: 20px;
+}
+
+.subject ul
+{
+    list-style: none;
+    font-size: 13px;
+    padding-left: 0;
+    margin-top: 5px;
+}
+
+.subject li
+{
+    margin-bottom: 4px;
+}
+
+.region
+{
+    width: 250px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.scroll
+{
+    overflow: auto;
+    height: 200px;
+    width: 100%;
+    padding-right: 100%;
+}
+
+.settings
+{
+    padding-top: 10px;
+    padding-right: 10px;
+}
