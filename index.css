@@ -9,7 +9,7 @@ body
     width: 100%;
     grid-template-areas: 'left news news news right'
         'left center center center right'
-        'left vidgets vidgets vidgets right';
+        'left widgets widgets widgets right';
 }
 
 .left
@@ -27,9 +27,9 @@ body
 {
     grid-area: news;
     display: flex;
-    justify-content: center;
     align-items: center;
     margin-top: 20px;
+    padding-left: 15%;
 }
 
 .center
@@ -42,23 +42,17 @@ body
 {
     min-width: 900px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    padding-left: 15%;
 }
 
-.vidgets
+.widgets
 {
-    grid-area: vidgets;
+    grid-area: widgets;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: baseline;
-    margin-left: 20%;
-}
-
-ul
-{
-    font-size: 14px;
-
+    padding-left: 15%;
 }
 
 .now li
@@ -71,15 +65,19 @@ ul
     display: flex;
     list-style: none;
     margin-top: 20px;
-    width: 70%;
-    margin-left: 16%;
-    font-size: 16px;
-    margin-bottom: 0;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-left: 0;
+}
+
+.menu
+{
+    padding-left: 15%;
 }
 
 .menu a
 {
-    margin: 10px;
+    margin-right: 10px;
     margin-bottom: 0;
     color: #00f;
 }
@@ -116,7 +114,6 @@ p
 {
     width: 650px;
     margin-top: 40px;
-    margin-left: 40px;
 }
 
 .smi
@@ -157,32 +154,46 @@ form
 .rectangle
 {
     border: 18px solid transparent;
-    border-left: 18px solid #ffd700;
+    border-left: 10px solid #ffd700;
+}
+
+ul
+{
+    list-style-position: inside;
+    padding-left: 0;
 }
 
 button
 {
     border: none;
     background: #ffd700;
+    font-size: 16px;
+}
+
+.info
+{
+    list-style: none;
 }
 
 input
 {
-    margin: 2px;
+    margin: 3px;
     height: 26px;
     width: 90%;
 }
 
 .search
 {
-    width: 70%;
+    width: 100%;
 }
 
 .yandex
 {
     font-family: Roboto, sans-serif;
     font-size: 40px;
-    margin-right: 20px;
+    margin-left: 100%;
+    margin-top: 290px;
+    padding-left: 10px;
 }
 
 .yandex:first-letter
@@ -210,6 +221,8 @@ input
 {
     color: #808080;
     font-size: 13px;
+    word-wrap: normal;
+    white-space: nowrap;
 }
 
 .arrow
@@ -221,10 +234,8 @@ input
 
 .find-all
 {
-    width: 60%;
-    margin-left: 12%;
+    margin-left: 15%;
     display: flex;
-    justify-content: center;
     align-items: center;
     margin-bottom: 10px;
 }
@@ -251,7 +262,7 @@ input
 
 .advertising
 {
-    text-align: right;
+    padding-left: 15%;
 }
 
 .subject-name
@@ -262,8 +273,7 @@ input
 
 .mail
 {
-    width: 130px;
-    height: 100px;
+    width: 200px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
     flex: 2;
     display: flex;
